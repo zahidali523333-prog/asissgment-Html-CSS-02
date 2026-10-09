@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: white;
+}
+
+
+/* NAVBAR */
+
+header {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    font-size: 11px;
+}
+
+
+/* HERO */
+
+.hero {
+    width: 90%;
+    max-width: 1100px;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.small-title {
+    font-size: 11px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero-text > p:not(.small-title) {
+    font-size: 12px;
+    line-height: 1.6;
+    max-width: 450px;
+}
+
+button {
+    border: none;
+    background: #292929;
+    color: white;
+    padding: 12px 25px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+/* HERO IMAGE */
+
+.hero-image {
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+.hero-image img {
+    width: 180px;
+    height: 200px;
+    object-fit: cover;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    z-index: 2;
+}
+
+.orange-shape {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    width: 55px;
+    height: 55px;
+    background: #ff665d;
+    border-radius: 0 25px 0 0;
+}
+
+.green-shape {
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+    width: 55px;
+    height: 55px;
+    background: #009b80;
+    border-radius: 0 0 0 20px;
+    z-index: 3;
+}
+
+
+/* BRANDS */
+
+.brands {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+
+
+/* SERVICES */
+
+.services {
+    width: 90%;
+    max-width: 1100px;
+    margin: 70px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+    text-align: center;
+}
+
+.service-icon {
+    width: 55px;
+    height: 55px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.icon1 {
+    background: #f7aaa6;
+    border-radius: 30px 30px 0 0;
+}
+
+.icon2 {
+    background: #ff5c54;
+    border-radius: 0 30px 0 0;
+}
+
+.icon3 {
+    background: #009d83;
+    border-radius: 0 0 30px 0;
+}
+
+.service h3 {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+
+/* PROJECTS */
+
+.projects {
+    width: 90%;
+    max-width: 1100px;
+    margin: 80px auto;
+}
+
+.projects h2,
+.testimonials h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.project img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.project h4 {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.project p {
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+
+/* TESTIMONIALS */
+
+.testimonials {
+    width: 90%;
+    max-width: 1100px;
+    margin: 80px auto;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.testimonial {
+    background: #f3f3f3;
+    padding: 25px;
+    min-height: 150px;
+}
+
+.testimonial p {
+    font-size: 10px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.client {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 8px;
+}
+
+.avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #777;
+}
+
+
+/* CONTACT */
+
+.contact {
+    width: 90%;
+    max-width: 1100px;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.contact-text {
+    width: 50%;
+}
+
+.contact h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.social {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+}
+
+form {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: none;
+    background: #f2f2f2;
+    padding: 12px;
+    margin-bottom: 10px;
+    font-family: Arial;
+    font-size: 11px;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+form button {
+    width: 80px;
+    margin-top: 5px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .brands {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .services,
+    .project-grid,
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact-text,
+    form {
+        width: 100%;
+    }
+}
